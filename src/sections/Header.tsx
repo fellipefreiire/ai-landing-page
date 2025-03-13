@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 export function Header() {
   return (
-    <header className="py-4 border-b border-white/15 md:border-none sticky top-0 z-10 backdrop-blur md:backdrop-blur-none">
+    <header className="sticky top-0 z-10 border-b border-white/15 py-4 backdrop-blur md:border-none md:backdrop-blur-none">
       <div className="container">
-        <div className="flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl max-w-2xl mx-auto md:backdrop-blur">
+        <div className="mx-auto flex max-w-2xl items-center justify-between rounded-xl border-white/15 md:border md:p-2.5 md:backdrop-blur">
           <div>
-            <div className="border size-10 rounded-lg inline-flex justify-center items-center border-white/15">
+            <div className="inline-flex size-10 items-center justify-center rounded-lg border border-white/15">
               <LogoIcon className="size-8" />
             </div>
           </div>

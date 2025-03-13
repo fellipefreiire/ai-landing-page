@@ -1,10 +1,4 @@
-import acmeLogo from '@/assets/logo-acme.png'
-import apexLogo from '@/assets/logo-apex.png'
-import celestialLogo from '@/assets/logo-celestial.png'
-import quantumLogo from '@/assets/logo-quantum.png'
-import pulseLogo from '@/assets/logo-pulse.png'
-import echoLogo from '@/assets/logo-echo.png'
-import Image from 'next/image'
+import { Tickers } from '@/components/Tickers'
 
 export function LogoTicker() {
   return (
@@ -14,26 +8,8 @@ export function LogoTicker() {
           <div className="flex-1 md:flex-none">
             <h1>Trusted by top innovative teams</h1>
           </div>
-          <div className="flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
-            <div className="flex flex-none gap-14">
-              {[
-                acmeLogo,
-                pulseLogo,
-                echoLogo,
-                celestialLogo,
-                apexLogo,
-                quantumLogo,
-              ].map((logo) => (
-                <Image
-                  key={logo.src}
-                  src={logo.src}
-                  alt=""
-                  width={120}
-                  height={120}
-                  className="h-6 w-auto"
-                />
-              ))}
-            </div>
+          <div className="flex flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
+            <Tickers />
           </div>
         </div>
       </div>
